@@ -1,0 +1,343 @@
+/* ----- FONTS ------------------------------------------------------------------------ */
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+/*----- MAIN ATTRIBUTES ----------------------------------------------------*/
+body{
+	margin: 0;
+	font-family: 'Roboto';
+	margin-bottom: 50px;
+	overflow-x: hidden;
+}
+
+header {
+	background-color: white;
+	width: 100%;
+	height: 68px;
+	margin: 0;
+	text-align: center;
+	padding-top: 30px;
+	border-bottom: 2px solid black;
+}
+
+header a {
+	display: inline-block;
+	color: black;
+	font-size: 1.8em;
+	margin-right: 5%;
+}
+
+header a:hover {
+	border-bottom: 2px solid black;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.active-button {
+	color: #737373;
+}
+
+img {
+	border: 1px solid black;
+}
+
+/* ----- MAIN PAGE ------------------------------------------------------------------------ */
+.main.page {
+	position: absolute;
+	top: 100px;
+}
+
+.main-image-left-text-block,
+.main-image-right-text-block {
+	flex: 1;
+	display: none;
+}
+
+.main-image-block {
+	display: flex;
+	text-align: center;
+	width: 100%;
+	height: 30vw;
+}
+
+.main-image {
+	display: flex;
+	flex: 5;
+	background-image: url(img/ramsay4.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.main-image-bottom-border {
+	width: 100%;
+	border-top: 2px solid black;
+}
+
+.main-page-name-block {
+	width: 100%;
+	display: block;
+	text-align: center;
+	color: black
+	margin-bottom: 50px;
+}
+
+.main-page-name {
+	display: block;
+	font-size: 2em;
+}
+
+.main-page-sub-name {
+	font-size: 1.7em;
+	display: block;
+}
+
+.main-image-hover {
+	display: flex;
+	top: 205px;
+	left: 25vw;
+	height: 100%;
+	width: 100%;
+}
+
+.main-image-hover-left-side-block,
+.main-image-hover-right-side-block {
+	background-color: rgba(0,0,0, 0.7);
+	flex: 1;
+}
+
+.main-image-hover-middle-block {
+	background-color: rgba(0,0,0, 0.7);
+	flex: 1;
+	color: white;
+}
+
+.main-image-hover-recipe-name {
+	font-size: 2em;
+	text-align: center;
+	display: block;
+	margin-bottom: 8%;
+}
+
+.main-image-hover-recipe-sub-name {
+	font-size: 1.6em;
+	text-align: center;
+	display: block;
+	margin-top: 0;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 8%; 
+}
+
+.main-image-hover-recipe-link {
+	width: 80%;
+	color: white;
+	border: 1px solid white;
+	display: block;
+	margin-left: 9.5%;
+	margin-right: 9.5%;
+}
+
+.main-image-hover-recipe-link:hover {
+	color: #737373;
+	border: 1px solid #737373;
+}
+
+.main-image-hover-image {
+	width: 100%;
+	height: 100%;
+	display: block;
+	box-shadow: 0 0 100px 0 rgba(255,255,255, 0.7)
+}
+
+p.main-image-hover-recipe-text {
+	margin: 0;
+	margin-bottom: 8%;
+	margin-top: 2%;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+/* ----- RECIPES PAGE ---------------------------------------------------------------------------- */
+.recipes-page {
+	position: absolute;
+	top: 100px;
+	width: 100vw;
+	flex-direction: row;
+	height: 800px;
+	display: flex;
+	margin-top: 50px;
+}
+
+.recipes-page-left-block, 
+.recipes-page-middle-block, 
+.recipes-page-right-block {
+	display: inline-block;
+	flex: 1;
+}
+
+.recipes-page-middle-block, 
+.recipes-page-right-block {
+	border-left: 2px solid black;
+}
+
+.recipes-page-left-block p, 
+.recipes-page-middle-block p, 
+.recipes-page-right-block p {
+	text-align: center;
+}
+
+.recipes-page-left-block li a:hover,
+.recipes-page-middle-block li a:hover, 
+.recipes-page-right-block li a:hover {
+	text-decoration: underline;	
+}
+
+.recipes-bg {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0, 0.4);
+	position: absolute;
+	top: 100px;
+	z-index: 1;
+}
+
+.recipe {
+	background-color: white;
+	position: absolute;
+	top: 200px;
+	width: 75%;
+	height: 75%;
+	transform: translate3d(15%, -5%, 0);
+	z-index: 2;
+	display: flex;
+}
+
+.recipe-middle-block,
+.recipe-right-block {
+	flex: 1;
+}
+
+.recipe-middle-block,
+.recipe-right-block {
+	border-left: 2px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 13px;
+	overflow-y: scroll;
+}
+
+.recipe-middle-block {
+	border: none;
+}
+
+li {
+	list-style: none;
+	padding: 2%;
+	padding-bottom: 5%;
+	border-bottom: 2px solid black;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li img {
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+ul li a {
+	text-align: center;
+	display: block;
+}
+
+/* ----- INFORMATION PAGE ------------------------------------------------------------------------ */
+.information-page {
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+
+.information-page-title-block {
+	text-align: center;
+	background-color: rgba(0,0,0, 0.6);
+	color: white;
+	font-size: 1.4em;
+	text-decoration: underline;	border-top: 2px solid black;
+}
+
+.top {
+	border-top: none;
+}
+
+.information-page-title-block p {
+	margin: 0;
+	margin-bottom: 3vh;
+}
+
+.information-page-text-block {
+	border-bottom: 2px solid black;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 50px;
+}
+
+/* ----- BOOKS PAGE ------------------------------------------------------------------------ */
+.books-page {
+	position: absolute;
+	top: 100px;
+}
+
+.book-block {
+	border-bottom: 2px solid black;
+	display: flex;
+	padding: 2vw;
+}
+
+.book-img {
+	flex: 1;
+	width: 25%;
+	height: 25%;
+	margin-right: 2vw;
+}
+
+.book-text {
+	flex: 2;
+	border-left: 2px solid black;
+	padding-left: 2vw;
+}
+
+div.book-text a {
+	width: 30%;
+	padding: 2%;
+	border: 1px solid black;
+	display: block;
+}
+
+div.book-text a:hover {
+	border: 1px solid #737373;
+	color: #737373;
+}
+
+/* ----- PHOTO PAGE ------------------------------------------------------------------------ */
+.photos-page {
+	position: absolute;
+	top: 100px;
+}
+
+.brick {
+	border: 1px solid black;
+}
+
+/* ----- FOOTER ------------------------------------------------------------------------ */
+.footer {
+	text-align: center;
+}
